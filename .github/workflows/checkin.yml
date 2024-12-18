@@ -10,7 +10,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     # if: github.ref == 'refs/heads/master'
 
     steps:
@@ -21,7 +21,7 @@ jobs:
           # ref: master
 
       - name: Set up python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2
         with:
           python-version: 3.7.1
 
